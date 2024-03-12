@@ -4,7 +4,7 @@ import {removeFromCart} from "../redux/slices/cartSlice"
 
 const Cart = () => {
   const cart=useSelector((state)=> state.cart)
-
+  console.log(cart);
   const dispatch=useDispatch()
   return (
     <div style={{margin:"10px"}}>
