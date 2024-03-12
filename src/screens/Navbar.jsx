@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IoMdCart } from "react-icons/io";
+import {useSelector} from "react-redux"
+
 const Navbar = () => {
+	//console.log(cart.length);
+
+	const cart=useSelector((state)=> state.cart)
 	//console.log(cart.length);
 
 	return (
@@ -53,7 +58,7 @@ const Navbar = () => {
                                             marginLeft:"-20px" 
 										}}
 									>
-                                        0
+                                        {cart.length}
 									</span>
 								</Link>
 							</li>
