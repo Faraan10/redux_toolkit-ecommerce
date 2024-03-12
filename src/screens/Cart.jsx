@@ -6,7 +6,6 @@ const Cart = () => {
   const cart=useSelector((state)=> state.cart)
 
   const dispatch=useDispatch()
-  //console.log(cart);
   return (
     <div style={{margin:"10px"}}>
       {cart?.map((item)=>(
